@@ -1,0 +1,370 @@
+:root {
+  --color-primary: #17a398;
+  --color-white: #ffffff;
+  --color-light: #b1f4ef;
+  --color-transact-africa-gold: #e8a200;
+  /*#6deae0 #4ae5d9*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-contacts {
+  background: var(--color-light);
+  width: 105%;
+  height: 1.5rem;
+}
+
+.header-contacts a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.top-bar {
+  position: fixed;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--color-primary);
+}
+h3 {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+nav {
+  background: var(--color-primary);
+  height: 3.5rem;
+  width: 105%;
+}
+label.logo {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  padding: 0 5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 4rem;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 3.5rem;
+  margin: 0 1.2rem;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+}
+
+a.active,
+a:hover {
+  background: var(--color-light);
+  transition: 0.5s;
+  color: black;
+}
+
+.checkbtn {
+  font-size: 3rem;
+  color: var(--color-light);
+  float: right;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/*-----------------------------------------   HOME  SECTION STARTS --------------------------------*/
+
+.home {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 1rem;
+  width: 100%;
+  background: var(--color-light);
+}
+
+.home h3 {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.home p {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.home .content .top-socials {
+  margin-top: 3rem;
+}
+
+.home .content .top-socials i {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  padding: 1rem;
+}
+.home .content .top-socials i:hover {
+  color: burlywood;
+}
+
+.home .home-slider {
+  margin-top: 2rem;
+  height: 100%;
+  width: 60%;
+}
+
+.home .home-slider .slide {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.home .home-slider .slide .image {
+  flex: 1 1 40rem;
+}
+
+.home .home-slider .slide .image img {
+  width: 70%;
+  height: 70%;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+/*-----------------------------------------   HOME  SECTION ENDS  --------------------------------*/
+
+/*-----------------------------------------   ABOUT  SECTION STARTS  --------------------------------*/
+
+.about {
+  background: var(--color-primary);
+  padding: 1rem;
+}
+
+.about h3 {
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+.about p {
+  color: var(--color-light);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/*-----------------------------------------   ABOUT  SECTION ENDS  --------------------------------*/
+
+/*-----------------------------------------   SERVICES  SECTION STARTS  --------------------------------*/
+
+.services {
+  padding: 1rem;
+}
+
+.services h3 {
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+.services h4 {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.service p {
+  height: 7rem;
+  color: var(--color-light);
+}
+.services .services-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: var(--color-deep-red);
+  align-items: center;
+}
+
+.services .services-container .service {
+}
+
+.service-image-container {
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.services .services-container .service img {
+  width: 90%;
+  height: 20rem;
+  border-radius: 0.75rem;
+}
+
+.contact .box-container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.contact .box-container h4 {
+  margin-bottom: 1.5rem;
+}
+
+.contact .box-container a {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.contact .box-container .bottom-social {
+  font-size: 3rem;
+}
+
+/*-----------------------------------------   SERVICES  SECTION ENDS  --------------------------------*/
+
+/*--------------------------------------- TESTIMONIALS  SECTION STARTS  --------------------------------*/
+
+.testimonials {
+  padding: 1rem;
+}
+
+.testimonials h3 {
+  color: var(--color-white);
+}
+
+.testimonials .swiper-container {
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-light);
+  overflow: hidden;
+}
+
+.testimonials .swiper-container .swiper-slide {
+  height: 10rem;
+  background: black;
+  /* background-color: black; */
+  background-position: center;
+  /* background-size: cover; */
+  width: 100%;
+  /* height: 90%; */
+}
+
+/*--------------------------------------- CONTACT  SECTION STARTS  --------------------------------*/
+.contact {
+  padding: 1rem;
+}
+
+.contact h3 {
+  color: var(--color-white);
+}
+
+.contact h4 {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.contact a {
+  color: black;
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid var(--color-light);
+  font-size: 1rem;
+  color: var(--color-white);
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/*---------------------------------------- MEDIA QUERIES  ---------------------------------------------*/
+
+@media screen and (max-width: 952px) {
+  .header-contacts {
+    background: var(--color-light);
+    width: 100%;
+    height: 2rem;
+  }
+
+  .header-contacts a {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  label.logo {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+    padding: 0 2rem;
+    font-weight: bold;
+  }
+
+  .checkbtn {
+    font-size: 2rem;
+    color: var(--color-white);
+    display: block;
+    line-height: 3.5rem;
+    cursor: pointer;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: var(--color-primary);
+    top: 5rem;
+    left: -100%;
+    transition: all 0.5s;
+    line-height: 3rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+    line-height: 1.85rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: black;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .home img {
+    font-size: 4rem;
+    height: 100%;
+    background: black;
+    width: 100%;
+  }
+}
