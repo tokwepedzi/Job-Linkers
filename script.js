@@ -12,6 +12,30 @@ var swiper = new Swiper(".home-slider", {
   loop: true,
 });
 
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  coverflowEffect: {
+    //play with this setting to get desired effect on slides
+    // rotate: 50,
+    // stretch: 0,
+    // depth: 100,
+    // modifier: 1,
+    rotate: 0,
+    stretch: 0,
+    depth: 200,
+    modifier: 3,
+    slideShadows: true,
+  },
+  loop: true,
+});
+
 // var swiper = new Swiper(".review-slider", {
 //   spaceBetween: 20,
 //   centeredSlides: true,

@@ -201,12 +201,11 @@ a:hover {
 .services .services-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background: var(--color-deep-red);
   align-items: center;
 }
 
-.services .services-container .service {
-}
+/* .services .services-container .service {
+} */
 
 .service-image-container {
   margin-top: 1rem;
@@ -252,7 +251,7 @@ a:hover {
   padding: 2rem;
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,13 +260,67 @@ a:hover {
 }
 
 .testimonials .swiper-container .swiper-slide {
-  height: 10rem;
-  background: black;
-  /* background-color: black; */
+  height: 55vh;
+  background: var(--color-primary);
+  border-radius: 1rem;
+  padding: 0.5rem;
   background-position: center;
-  /* background-size: cover; */
+  width: 30%;
+  /* box-shadow: 0 15px rgba(0, 0, 0, 0.05); */
+  filter: blur(0.1rem);
+}
+
+.testimonials .swiper-container .swiper-slide-active {
+  filter: blur(0rem);
+}
+
+.testimonial-box {
+  position: relative;
   width: 100%;
-  /* height: 90%; */
+  padding: 0.5rem;
+}
+
+.testimonial-box h2 {
+  color: var(--color-white);
+}
+.testimonial-box p {
+  color: beige;
+  line-height: 1rem;
+  height: 20vh;
+}
+.testimonial-box a {
+  color: black;
+}
+
+.testimonial-box a:hover {
+  color: #e8a200;
+  background: var(--color-primary);
+}
+
+.testimonial-box .fas {
+  opacity: 0.4;
+}
+
+.testimonial-box .details {
+  background: beige;
+  border-radius: 1rem;
+}
+
+.testimonial-box .details .image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.testimonial-box .details .image-box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
 }
 
 /*--------------------------------------- CONTACT  SECTION STARTS  --------------------------------*/
